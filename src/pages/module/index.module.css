@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.videoWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.videoLoader {
+  width: 500px;
+  height: 250px;
+  background-color: rgb(225, 133, 133) a(255, 0, 0, 0);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingIcon {
+  width: 70px;
+}
+
+.button {
+  width: fit-content;
+  margin-top: 10px;
+  cursor: pointer;
+}

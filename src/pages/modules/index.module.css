@@ -1,0 +1,9 @@
+.additionsBlocks {
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+
+.additionsBlocks button {
+    background-color: rgb(105, 142, 250);
+    color: #ffffff;
+}

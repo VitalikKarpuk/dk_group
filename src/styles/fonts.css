@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Robot';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robot Bold';
+    src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robot Medium';
+    src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Robot Semi Bold';
+    src: url('./fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+:root {
+    --ff--replacement-font: Arial, sans-serif;
+    --ff--inter-regular: Robot, var(--ff--replacement-font);
+    --ff--inter-bold: Robot Bold, var(--ff--replacement-font);
+    --ff--inter-medium: Robot Medium, var(--ff--replacement-font);
+    --ff--inter-semi-bold: Robot Semi Bold, var(--ff--replacement-font);
+}
