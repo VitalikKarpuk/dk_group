@@ -1,6 +1,5 @@
 import { useParams } from "react-router";
 import { modulesList } from "../../common/constants";
-import ReactPlayer from "react-player";
 import { useState } from "react";
 
 import style from "./index.module.css";
@@ -9,11 +8,9 @@ import Video from "./video";
 import { Link } from "react-router-dom";
 
 const Module = () => {
-  const [loading, setLoading] = useState(true);
   let params = useParams();
   const module = modulesList.find(({ id }) => id === params.id);
-  console.log(module);
-  console.log(loading);
+
   return (
     <div className={style.wrapper}>
       {module.links.map(({ url, title, dz, buttonText }) => {
