@@ -15,7 +15,7 @@
 .videoLoader {
   width: 500px;
   height: 250px;
-  background-color: rgb(225, 133, 133) a(255, 0, 0, 0);
+  background-color: #000000;
   position: absolute;
   display: flex;
   align-items: center;

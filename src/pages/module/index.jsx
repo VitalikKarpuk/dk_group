@@ -8,7 +8,14 @@ import { Link } from "react-router-dom";
 
 const Module = () => {
   let params = useParams();
-  const module = modulesList.find(({ id }) => id === params.id);
+
+  const module = modulesList.find(
+    ({ id, disabled }) => id === params.id && !disabled
+  );
+
+  if (!module) {
+    window.location.href = "/404";
+  }
 
   return (
     <div className={style.wrapper}>

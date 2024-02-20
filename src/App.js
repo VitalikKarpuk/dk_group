@@ -4,14 +4,16 @@ import Home from "./pages/modules";
 import Module from "./pages/module";
 import Layout from "./components/organisms/modules/layout";
 import classNames from "classnames";
+import Page404 from "./pages/404";
 
 function App() {
   return (
     <div className={classNames("App")}>
       <Layout>
         <Routes>
-          <Route path="/modules" element={<Home />} />
-          <Route path="/modules/:id" element={<Module />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/404" element={<Page404 />} />
+          <Route path="/:id" element={<Module />} />
         </Routes>
       </Layout>
     </div>
