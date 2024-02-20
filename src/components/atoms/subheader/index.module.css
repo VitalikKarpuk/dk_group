@@ -2,3 +2,11 @@
   font-size: 48px;
   line-height: 52px;
 }
+
+@media (max-width: 768px) {
+  .subheader {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  
+}
