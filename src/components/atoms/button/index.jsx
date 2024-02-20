@@ -1,10 +1,6 @@
 import classNames from "classnames";
 import style from "./index.module.css";
 
-const buttonVariant = {
-  blue: "blue",
-};
-
 const Button = ({ text, className, variant, disabled }) => {
   return (
     <button

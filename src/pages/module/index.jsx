@@ -1,6 +1,5 @@
 import { useParams } from "react-router";
 import { modulesList } from "../../common/constants";
-import { useState } from "react";
 
 import style from "./index.module.css";
 import Button from "../../components/atoms/button";
