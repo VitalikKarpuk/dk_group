@@ -15,7 +15,7 @@ const Video = ({ link }) => {
         </div>
       )}
       <ReactPlayer
-        width="500px"
+        width="100%"
         height="250px"
         controls
         url={link}
