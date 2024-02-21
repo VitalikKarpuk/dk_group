@@ -1,3 +1,4 @@
+import Footer from "../../footer";
 import MainBanner from "../mainBanner/mainBanner";
 
 const Layout = ({ children }) => {
@@ -5,6 +6,7 @@ const Layout = ({ children }) => {
     <>
       <MainBanner />
       {children}
+      <Footer />
     </>
   );
 };

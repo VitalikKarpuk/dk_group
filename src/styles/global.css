@@ -249,8 +249,7 @@ _:-ms-fullscreen,
 
 @media (max-width: 576px) {
   .container {
-    padding: 0 16px;
-    max-width: 575px;
+    padding: 0 10px;
   }
 }
 

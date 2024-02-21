@@ -85,9 +85,9 @@ export const modulesList = [
 
 export const additionsBlock = [
   {
-    title: "Постановка целей",
+    title: "Специализация",
     description:
-      "Четкие шаги планирования, построение вашей стратегии, декомпозиция задач",
+      "Определяем направление в работе",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
@@ -101,9 +101,9 @@ export const additionsBlock = [
     disabled: true
   },
   {
-    title: "Постановка целей",
+    title: "Клиенты",
     description:
-      "Четкие шаги планирования, построение вашей стратегии, декомпозиция задач",
+      "Определяем и исследуем свою целевую аудиторию",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
@@ -117,9 +117,9 @@ export const additionsBlock = [
     disabled: true
   },
   {
-    title: "Постановка целей",
+    title: "Продукт",
     description:
-      "Четкие шаги планирования, построение вашей стратегии, декомпозиция задач",
+      "Создаем вашу уникальную продуктовую линейку",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",

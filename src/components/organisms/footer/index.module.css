@@ -1,0 +1,25 @@
+.footer {
+  padding: 20px 0;
+  background-color: #b7b5b5;
+}
+
+.footer > div {
+  display: flex;
+  justify-content: center;
+}
+.mediaBlock {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mediaBlock svg {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.mediaBlock svg:hover {
+    opacity: .5;
+  }
