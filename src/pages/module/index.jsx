@@ -5,6 +5,7 @@ import style from "./index.module.css";
 import Button from "../../components/atoms/button";
 import Video from "./video";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 
 const Module = () => {
   let params = useParams();
@@ -18,7 +19,7 @@ const Module = () => {
   }
 
   return (
-    <div className={style.wrapper}>
+    <div className={classNames(style.wrapper, 'container')}>
       {module.links.map(({ url, title, dz, buttonText }) => {
         return (
           <>
