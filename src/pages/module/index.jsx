@@ -3,9 +3,9 @@ import { modulesList } from "../../common/constants";
 
 import style from "./index.module.css";
 import Button from "../../components/atoms/button";
-import Video from "./video";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
+import Video from "../../components/moleculs/video/video";
 
 const Module = () => {
   let params = useParams();

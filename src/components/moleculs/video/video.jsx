@@ -2,13 +2,13 @@ import { useState } from "react";
 import ReactPlayer from "react-player";
 
 import style from "./index.module.css";
-import BubbleLoading from "../../components/atoms/loading";
+import BubbleLoading from "../../atoms/loading";
 
 const Video = ({ link }) => {
   const [loading, setLoading] = useState(true);
 
   return (
-    <>
+    <div className={style.wrapper}>
       {loading && (
         <div className={style.videoLoader}>
           <BubbleLoading className={style.loadingIcon}/>
@@ -21,7 +21,7 @@ const Video = ({ link }) => {
         url={link}
         onReady={(e) => setLoading(false)}
       />
-    </>
+    </div>
   );
 };
 

@@ -12,6 +12,7 @@ export const modulesList = [
       },
     ],
     id: "1",
+    disabled: true,
   },
   {
     title: "Самооценка",
@@ -86,50 +87,44 @@ export const modulesList = [
 export const additionsBlock = [
   {
     title: "Специализация",
-    description:
-      "Определяем направление в работе",
+    description: "Определяем направление в работе",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
-        abstract: "sdfsdf",
         buttonText: "Домашнее задание",
         dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
         title: "Постановка целей",
       },
     ],
     id: "A",
-    disabled: true
+    disabled: true,
   },
   {
     title: "Клиенты",
-    description:
-      "Определяем и исследуем свою целевую аудиторию",
+    description: "Определяем и исследуем свою целевую аудиторию",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
-        abstract: "sdfsdf",
         buttonText: "Домашнее задание",
         dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
         title: "Постановка целей",
       },
     ],
     id: "B",
-    disabled: true
+    disabled: true,
   },
   {
     title: "Продукт",
-    description:
-      "Создаем вашу уникальную продуктовую линейку",
+    description: "Создаем вашу уникальную продуктовую линейку",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
-        abstract: "sdfsdf",
         buttonText: "Домашнее задание",
         dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
         title: "Постановка целей",
       },
     ],
     id: "C",
-    disabled: true
+    disabled: true,
   },
 ];

@@ -17,15 +17,6 @@
   align-items: center;
 }
 
-.videoLoader {
-  width: 100%;
-  height: 250px;
-  background-color: #000000;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .loadingIcon {
   width: 70px;
