@@ -55,44 +55,50 @@
   line-height: 36px;
   margin: 0 0 10px 0;
   text-align: start;
+  text-transform: lowercase;
 }
 
 .textBlock p {
   font-size: 16px;
   margin: 0;
 }
-
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .wrapper > div {
     padding: 0 20px 20px 20px;
   }
-  
+  .photo {
+    width: 400px;
+    right: -100px;
+    top: -60px;
+    object-position: 0 -57px;
+  }
+}
+
+@media (max-width: 768px) {
   .textBlock {
     z-index: 1;
     justify-content: space-between;
     text-align: start;
   }
 
-  .textBlock h1{
-   width: 200px;
+  .textBlock h1 {
+    font-size: 34px;
+    width: 200px;
+    order: 2;
+    margin-bottom: 50px;
   }
 
   .textBlock h3 {
-    color: #ff9400;
+    text-transform: none;
     z-index: 1;
-  }
-
-  .photo {
-    width: 400px;
-    right: -120px;
-    top: -60px;
-    object-position: 0 -57px;
+    order: 1;
+    font-size: 22px;
+    width: 300px;
   }
 
   .textBlock p {
     z-index: 1;
-
+    order: 3;
+    font-size: 14px;
   }
-  
 }
