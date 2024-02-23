@@ -68,7 +68,7 @@
   }
   .photo {
     width: 400px;
-    right: -100px;
+    right: -120px;
     top: -60px;
     object-position: 0 -57px;
   }
@@ -86,6 +86,7 @@
     width: 200px;
     order: 2;
     margin-bottom: 50px;
+    z-index: 1;
   }
 
   .textBlock h3 {
