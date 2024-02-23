@@ -95,6 +95,7 @@
     order: 1;
     font-size: 22px;
     width: 300px;
+    line-height: 22px;
   }
 
   .textBlock p {
