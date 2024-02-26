@@ -5,14 +5,14 @@ export const modulesList = [
       "Четкие шаги планирования, построение вашей стратегии, декомпозиция задач",
     links: [
       {
-        url: "https://youtu.be/2MJbZs6Ckt0",
+        url: "https://youtu.be/Dt3ruU1_hgc",
         buttonText: "Домашнее задание",
         dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
         title: "Постановка целей",
       },
     ],
     id: "1",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Самооценка",
