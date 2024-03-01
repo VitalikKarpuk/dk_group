@@ -10,6 +10,9 @@ export const modulesList = [
         dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
         title: "Постановка целей",
       },
+      {
+        url: "https://youtu.be/m90gfiQXlEI",
+      },
     ],
     id: "1",
     disabled: false,
