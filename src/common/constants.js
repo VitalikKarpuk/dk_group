@@ -6,8 +6,12 @@ export const modulesList = [
     links: [
       {
         url: "https://youtu.be/Dt3ruU1_hgc",
-        buttonText: "Домашнее задание",
-        dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
+          }
+        ],
         title: "Постановка целей",
       },
       {
@@ -23,20 +27,23 @@ export const modulesList = [
       "Наработка уверенности в себе, внутреней опоры, смелости проявляться",
     links: [
       {
-        url: "https://www.youtube.com/embed/xNRJwmlRBNU?si=mLjsiByXt_u-je7o",
-        title: "ГОТОВНОСТЬ БЛОГА К ПРОДАЖАМ",
-      },
-      {
-        url: "https://www.youtube.com/embed/LSRNmhLS76o?si=F6DYMFf2ta5kADXu",
-        title: "ГОТОВНОСТЬ БЛОГА К ПРОДАЖАМ",
-      },
-      {
-        url: "https://www.youtube.com/embed/LSRNmhLS76o?si=F6DYMFf2ta5kADXu",
-        title: "ГОТОВНОСТЬ БЛОГА К ПРОДАЖАМ",
+        url: "https://youtu.be/Az8CfSjpk3g",
+        dz: [
+          {
+            buttonText: "Домашнее задание 1",
+            link: "https://docs.google.com/document/d/1rLRNd918Xt0bt3Jdu-nAqOdGr5vL4hNXp7wGUpr9h5I/edit?usp=drive_link",
+          },
+          {
+            buttonText: "Домашнее задание 2",
+            link: "https://drive.google.com/file/d/1Kgs8iLAMOB9Z7aQqGvqyO1yxGPnlSZl6/view?usp=drive_link",
+          },
+        ],
+
+        title: "Самооценка",
       },
     ],
     id: "2",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Страхи",

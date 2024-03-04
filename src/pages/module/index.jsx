@@ -19,19 +19,20 @@ const Module = () => {
   }
 
   return (
-    <div className={classNames(style.wrapper, 'container')}>
-      {module.links.map(({ url, title, dz, buttonText }) => {
+    <div className={classNames(style.wrapper, "container")}>
+      {module.links.map(({ url, title, dz }) => {
         return (
           <>
             <h1>{title}</h1>
             <div className={style.videoWrapper}>
               <Video link={url} />
-
-              {buttonText && (
-                <Link to={dz} className={style.button} target="_blank">
-                  <Button text={buttonText || "Домашнее задание"} />
-                </Link>
-              )}
+              {dz?.map(({ buttonText, link }) => {
+                return (
+                  <Link to={link} className={style.button} target="_blank">
+                    <Button text={buttonText || "Домашнее задание"} />
+                  </Link>
+                );
+              })}
             </div>
           </>
         );
