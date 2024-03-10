@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { modulesList } from "../../common/constants";
+import { additionsBlock, modulesList } from "../../common/constants";
 
 import style from "./index.module.css";
 import Button from "../../components/atoms/button";
@@ -14,13 +14,19 @@ const Module = () => {
     ({ id, disabled }) => id === params.id && !disabled
   );
 
-  if (!module) {
+  const additionBlock = additionsBlock.find(
+    ({ id, disabled }) => id === params.id && !disabled
+  );
+
+  const block = module || additionBlock;
+
+  if (!block) {
     window.location.href = "/404";
   }
 
   return (
     <div className={classNames(style.wrapper, "container")}>
-      {module.links.map(({ url, title, dz }) => {
+      {block.links.map(({ url, title, dz }) => {
         return (
           <>
             <h1>{title}</h1>

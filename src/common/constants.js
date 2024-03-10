@@ -51,20 +51,18 @@ export const modulesList = [
       "Вы научитесь работать со своими страхами и превращать их в ресурс",
     links: [
       {
-        url: "https://www.youtube.com/embed/xNRJwmlRBNU?si=mLjsiByXt_u-je7o",
-        title: "ГОТОВНОСТЬ БЛОГА К ПРОДАЖАМ",
-      },
-      {
-        url: "https://www.youtube.com/embed/LSRNmhLS76o?si=F6DYMFf2ta5kADXu",
-        title: "ГОТОВНОСТЬ БЛОГА К ПРОДАЖАМ",
-      },
-      {
-        url: "https://www.youtube.com/embed/LSRNmhLS76o?si=F6DYMFf2ta5kADXu",
-        title: "ГОТОВНОСТЬ БЛОГА К ПРОДАЖАМ",
-      },
+        url: "https://youtu.be/F9YY3Ir2mF8",
+        title: "Страхи",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://docs.google.com/spreadsheets/d/1cp_cO-3_U858VQBFjLPn_reoR6nG-WfJZ4q4IOk3aMU/edit?usp=drive_link",
+          }
+        ],
+      }
     ],
     id: "3",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Деньги",
@@ -96,22 +94,26 @@ export const modulesList = [
 
 export const additionsBlock = [
   {
-    title: "Специализация",
-    description: "Определяем направление в работе",
+    title: "Аудитория",
+    description: "Определяем и исследуем свою целевую аудиторию",
     links: [
       {
-        url: "https://youtu.be/2MJbZs6Ckt0",
-        buttonText: "Домашнее задание",
-        dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
-        title: "Постановка целей",
+        url: "https://youtu.be/By3F00YBL7o",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://drive.google.com/drive/folders/1-NWYP2-N-C2omVOhqfp3DOhn76I69qUm?usp=drive_link",
+          },
+        ],
+        title: "Аудитория",
       },
     ],
     id: "A",
-    disabled: true,
+    disabled: false,
   },
   {
-    title: "Клиенты",
-    description: "Определяем и исследуем свою целевую аудиторию",
+    title: "Продукт",
+    description: "Создаем вашу уникальную продуктовую линейку",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
@@ -124,8 +126,8 @@ export const additionsBlock = [
     disabled: true,
   },
   {
-    title: "Продукт",
-    description: "Создаем вашу уникальную продуктовую линейку",
+    title: "Воронка",
+    description: "Создаем путь клиента для покупки и увеличиваем его ЛТВ",
     links: [
       {
         url: "https://youtu.be/2MJbZs6Ckt0",
