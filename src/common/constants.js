@@ -69,6 +69,22 @@ export const modulesList = [
     description:
       "Полноя перепрошивка денежного мышления, поймете основные правила денежного движения",
     link: "/",
+    links: [
+      {
+        url: "https://youtu.be/CZnc_TbcUiE",
+        title: "Деньги",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://docs.google.com/spreadsheets/d/1j7srqsWMy2hoVrl5yBPrDlcJzzcrfJM8Sli1-qA3dlA/edit?usp=drive_link",
+          },
+          {
+            buttonText: "Денежные блоки",
+            link: "https://docs.google.com/document/d/1bUVPqx79tTmieXOm3b6VQo6RXnu73HzV/edit?usp=drive_link&ouid=116070228497920182644&rtpof=true&sd=true",
+          }
+        ],
+      }
+    ],
     id: "4",
     disabled: true,
   },
