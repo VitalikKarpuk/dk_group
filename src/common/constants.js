@@ -86,7 +86,7 @@ export const modulesList = [
       }
     ],
     id: "4",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Уникальность",
@@ -132,14 +132,12 @@ export const additionsBlock = [
     description: "Создаем вашу уникальную продуктовую линейку",
     links: [
       {
-        url: "https://youtu.be/2MJbZs6Ckt0",
-        buttonText: "Домашнее задание",
-        dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
-        title: "Постановка целей",
+        url: "https://youtu.be/pIJBU6q6gsA",
+        title: "Продукт",
       },
     ],
     id: "B",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Воронка",
