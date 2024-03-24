@@ -10,7 +10,7 @@ export const modulesList = [
           {
             buttonText: "Домашнее задание",
             link: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
-          }
+          },
         ],
         title: "Постановка целей",
       },
@@ -57,9 +57,9 @@ export const modulesList = [
           {
             buttonText: "Домашнее задание",
             link: "https://docs.google.com/spreadsheets/d/1cp_cO-3_U858VQBFjLPn_reoR6nG-WfJZ4q4IOk3aMU/edit?usp=drive_link",
-          }
+          },
         ],
-      }
+      },
     ],
     id: "3",
     disabled: false,
@@ -81,9 +81,9 @@ export const modulesList = [
           {
             buttonText: "Денежные блоки",
             link: "https://docs.google.com/document/d/1bUVPqx79tTmieXOm3b6VQo6RXnu73HzV/edit?usp=drive_link&ouid=116070228497920182644&rtpof=true&sd=true",
-          }
+          },
         ],
-      }
+      },
     ],
     id: "4",
     disabled: false,
@@ -92,10 +92,21 @@ export const modulesList = [
     title: "Уникальность",
     description:
       "Определение вашей аутентичности как личности и как эксперта, выявление сильных сторон",
-
+    links: [
+      {
+        url: "https://youtu.be/QaCUnUqSnDA",
+        title: "Уникальность",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://docs.google.com/spreadsheets/d/12D-xDY5ZaOGvvbgHOaFFKvh6UNcqm7ocpb_5OTfqEn4/edit?usp=sharing",
+          },
+        ],
+      },
+    ],
     link: "/",
     id: "5",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продажи и продвижение",
@@ -144,13 +155,18 @@ export const additionsBlock = [
     description: "Создаем путь клиента для покупки и увеличиваем его ЛТВ",
     links: [
       {
-        url: "https://youtu.be/2MJbZs6Ckt0",
+        url: "https://youtu.be/iXo3lPHFBc4",
         buttonText: "Домашнее задание",
-        dz: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
-        title: "Постановка целей",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://docs.google.com/spreadsheets/d/1TBnTyhxQmUYqIFEyUVps7xrcKGapvAlprLrjPUQQO2A/edit?usp=drive_link",
+          },
+        ],
+        title: "Воронка продаж",
       },
     ],
     id: "C",
-    disabled: true,
+    disabled: false,
   },
 ];
