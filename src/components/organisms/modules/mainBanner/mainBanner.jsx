@@ -9,7 +9,7 @@ const MainBanner = ({ className }) => {
       <div className="container">
         <header>
           <Logo />
-          <p>Доступ до 31 мая (включительно)</p>
+          <p>Доступ до 31 августа (включительно)</p>
         </header>
         <div className={style.textBlock}>
           <h1 className={classNames(style.growthGroup, "t-inter-bold")}>

@@ -19,7 +19,7 @@ export const modulesList = [
       },
     ],
     id: "1",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Самооценка",
@@ -43,7 +43,7 @@ export const modulesList = [
       },
     ],
     id: "2",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Страхи",
@@ -62,7 +62,7 @@ export const modulesList = [
       },
     ],
     id: "3",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Деньги",
@@ -86,7 +86,7 @@ export const modulesList = [
       },
     ],
     id: "4",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Уникальность",
@@ -106,7 +106,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Продажи и продвижение",
@@ -120,7 +120,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "6",
-    disabled: false,
+    disabled: true,
   },
 ];
 
@@ -141,7 +141,7 @@ export const additionsBlock = [
       },
     ],
     id: "A",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Продукт",
@@ -153,7 +153,7 @@ export const additionsBlock = [
       },
     ],
     id: "B",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Воронка",
@@ -172,6 +172,6 @@ export const additionsBlock = [
       },
     ],
     id: "C",
-    disabled: false,
+    disabled: true,
   },
 ];
