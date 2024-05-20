@@ -19,7 +19,7 @@ export const modulesList = [
       },
     ],
     id: "1",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Самооценка",
