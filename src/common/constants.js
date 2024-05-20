@@ -14,9 +14,10 @@ export const modulesList = [
         ],
         title: "Постановка целей",
       },
-      {
-        url: "https://youtu.be/m90gfiQXlEI",
-      },
+      // {
+      //   url: "https://youtu.be/m90gfiQXlEI",
+      //   disabled: true
+      // },
     ],
     id: "1",
     disabled: false,
