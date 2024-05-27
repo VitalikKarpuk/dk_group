@@ -44,7 +44,7 @@ export const modulesList = [
       },
     ],
     id: "2",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Страхи",
