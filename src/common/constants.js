@@ -142,7 +142,7 @@ export const additionsBlock = [
       },
     ],
     id: "A",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продукт",
