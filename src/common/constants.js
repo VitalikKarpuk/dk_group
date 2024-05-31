@@ -63,7 +63,7 @@ export const modulesList = [
       },
     ],
     id: "3",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Деньги",
@@ -87,7 +87,7 @@ export const modulesList = [
       },
     ],
     id: "4",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Уникальность",
@@ -107,7 +107,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продажи и продвижение",
@@ -121,7 +121,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "6",
-    disabled: true,
+    disabled: false,
   },
 ];
 
@@ -154,7 +154,7 @@ export const additionsBlock = [
       },
     ],
     id: "B",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Воронка",
@@ -173,6 +173,6 @@ export const additionsBlock = [
       },
     ],
     id: "C",
-    disabled: true,
+    disabled: false,
   },
 ];
