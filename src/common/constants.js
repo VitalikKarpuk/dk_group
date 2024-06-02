@@ -87,7 +87,7 @@ export const modulesList = [
       },
     ],
     id: "4",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Уникальность",
@@ -107,7 +107,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Продажи и продвижение",
@@ -154,7 +154,7 @@ export const additionsBlock = [
       },
     ],
     id: "B",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Воронка",
@@ -173,6 +173,6 @@ export const additionsBlock = [
       },
     ],
     id: "C",
-    disabled: false,
+    disabled: true,
   },
 ];
