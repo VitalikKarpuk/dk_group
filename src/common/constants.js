@@ -102,6 +102,10 @@ export const modulesList = [
             buttonText: "Домашнее задание",
             link: "https://docs.google.com/spreadsheets/d/12D-xDY5ZaOGvvbgHOaFFKvh6UNcqm7ocpb_5OTfqEn4/edit?usp=sharing",
           },
+          {
+            url: "https://www.16personalities.com/ru/tipy-lichnosti",
+            buttonText: 'Тест "типы личности"',
+          },
         ],
       },
     ],
@@ -117,10 +121,6 @@ export const modulesList = [
       {
         url: " https://youtu.be/IuuK3D_cTRA",
         title: "Продажи и продвижение",
-      },
-      {
-        url: " https://www.16personalities.com/ru/tipy-lichnosti",
-        title: "Типы личности",
       },
     ],
 
