@@ -103,7 +103,7 @@ export const modulesList = [
             link: "https://docs.google.com/spreadsheets/d/12D-xDY5ZaOGvvbgHOaFFKvh6UNcqm7ocpb_5OTfqEn4/edit?usp=sharing",
           },
           {
-            url: "https://www.16personalities.com/ru/tipy-lichnosti",
+            link: "https://www.16personalities.com/ru/tipy-lichnosti",
             buttonText: 'Тест "типы личности"',
           },
         ],
