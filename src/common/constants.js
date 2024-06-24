@@ -16,7 +16,7 @@ export const modulesList = [
       },
       {
         url: "https://youtu.be/m90gfiQXlEI",
-        disabled: true
+        disabled: true,
       },
     ],
     id: "1",
@@ -119,12 +119,21 @@ export const modulesList = [
       "Инструменты для продаж, упоковка продукта, анализ покупателя, система продвижения",
     links: [
       {
-        url: " https://youtu.be/IuuK3D_cTRA",
+        url: "https://youtu.be/IuuK3D_cTRA",
         title: "Продажи и продвижение",
+        dz: [
+          {
+            buttonText: "Дополнительные материалы",
+            link: "https://drive.google.com/drive/folders/1GaCeszZxdcf-uxmsF0g2zBQyGJPQdGRR?usp=drive_link",
+          },
+          {
+            link: "https://docs.google.com/document/d/133pOU9iHvVi0OKGYlBhwO1VskzZgbdCaxYmr24BYjnw/edit?usp=sharing",
+            buttonText: "Обратная связь",
+          },
+        ],
       },
     ],
 
-    
     link: "/",
     id: "6",
     disabled: false,
