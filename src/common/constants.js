@@ -63,7 +63,7 @@ export const modulesList = [
       },
     ],
     id: "3",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Деньги",
@@ -157,7 +157,7 @@ export const additionsBlock = [
       },
     ],
     id: "A",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продукт",
