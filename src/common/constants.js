@@ -111,7 +111,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Продажи и продвижение",
