@@ -85,8 +85,8 @@
     font-size: 34px;
     width: 200px;
     order: 2;
-    margin-bottom: 50px;
     z-index: 1;
+    flex-grow: 1;
   }
 
   .textBlock h3 {
