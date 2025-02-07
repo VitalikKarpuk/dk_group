@@ -13,7 +13,7 @@ const Home = () => {
       <div className="container">
         <div className={style.initModule}>
           <SubHeader title="ВВОДНЫЙ МОДУЛЬ" />
-          <Video link="https://youtu.be/tl5WKz5NeIE" />
+          <Video link="https://youtu.be/lwKM2j_vAwQ" />
           <Link
             to={
               "https://docs.google.com/forms/d/e/1FAIpQLSfyhEOga2_AaErFDRKpKJOl1SWDBPMJG49ydcLzaam6gkcvSA/viewform?usp=sharing"
@@ -25,7 +25,7 @@ const Home = () => {
           </Link>
           <Link
             to={
-              "https://docs.google.com/spreadsheets/d/17EcGSWig6qse4GM3TXqoAg0q9j5dt8mbDJB8QQhgwR4/edit?usp=drive_link"
+              "https://docs.google.com/spreadsheets/d/1npc30rf6g4ySJypBHJggkOFf3bNxf4WfAT7FuVflUCo/edit?usp=drive_link"
             }
             className={style.button}
             target="_blank"
