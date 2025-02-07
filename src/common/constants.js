@@ -1,6 +1,6 @@
 export const modulesList = [
   {
-    title: "Постановка целей",
+    title: "Точка Б",
     description:
       "Четкие шаги планирования, построение вашей стратегии, декомпозиция задач",
     links: [
@@ -12,7 +12,7 @@ export const modulesList = [
             link: "https://docs.google.com/spreadsheets/d/1xbFB7MZ4WHdQlCXy_eT328e0staKOj0u0V-glVEvtSM/edit",
           },
         ],
-        title: "Постановка целей",
+        title: "Точка Б",
       },
       // {
       //   url: "https://youtu.be/m90gfiQXlEI",
@@ -20,7 +20,7 @@ export const modulesList = [
       // },
     ],
     id: "1",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Самооценка",
@@ -44,10 +44,10 @@ export const modulesList = [
       },
     ],
     id: "2",
-    disabled: false,
+    disabled: true,
   },
   {
-    title: "Страхи",
+    title: "Убираем страхи",
     description:
       "Вы научитесь работать со своими страхами и превращать их в ресурс",
     links: [
@@ -63,17 +63,17 @@ export const modulesList = [
       },
     ],
     id: "3",
-    disabled: false,
+    disabled: true,
   },
   {
-    title: "Деньги",
+    title: "Финансы",
     description:
       "Полноя перепрошивка денежного мышления, поймете основные правила денежного движения",
     link: "/",
     links: [
       {
         url: "https://youtu.be/CZnc_TbcUiE",
-        title: "Деньги",
+        title: "Финансы",
         dz: [
           {
             buttonText: "Домашнее задание",
@@ -87,7 +87,7 @@ export const modulesList = [
       },
     ],
     id: "4",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Уникальность",
@@ -111,7 +111,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Продажи и продвижение",
@@ -136,11 +136,29 @@ export const modulesList = [
 
     link: "/",
     id: "6",
-    disabled: false,
+    disabled: true,
   },
 ];
 
 export const additionsBlock = [
+  {
+    title: "Экспертная самоидентификация",
+    description: "Определяем свое направление в работе",
+    links: [
+      {
+        url: "https://youtu.be/By3F00YBL7o",
+        dz: [
+          {
+            buttonText: "Домашнее задание",
+            link: "https://drive.google.com/drive/folders/1-NWYP2-N-C2omVOhqfp3DOhn76I69qUm?usp=drive_link",
+          },
+        ],
+        title: "Экспертная самоидентификация",
+      },
+    ],
+    id: "A",
+    disabled: true,
+  },
   {
     title: "Аудитория",
     description: "Определяем и исследуем свою целевую аудиторию",
@@ -156,20 +174,20 @@ export const additionsBlock = [
         title: "Аудитория",
       },
     ],
-    id: "A",
-    disabled: false,
+    id: "B",
+    disabled: true,
   },
   {
-    title: "Продукт",
-    description: "Создаем вашу уникальную продуктовую линейку",
+    title: "Продуктовая линейка",
+    description: "Создаем свою уникальную продуктовую линейку",
     links: [
       {
         url: "https://youtu.be/pIJBU6q6gsA",
         title: "Продукт",
       },
     ],
-    id: "B",
-    disabled: false,
+    id: "C",
+    disabled: true,
   },
   {
     title: "Воронка",
@@ -187,7 +205,7 @@ export const additionsBlock = [
         title: "Воронка продаж",
       },
     ],
-    id: "C",
-    disabled: false,
+    id: "D",
+    disabled: true,
   },
 ];
