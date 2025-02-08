@@ -5,7 +5,7 @@ export const modulesList = [
       "Четкие шаги планирования, построение вашей стратегии, декомпозиция задач",
     links: [
       {
-        url: "https://youtu.be/Dt3ruU1_hgc",
+        url: "https://youtu.be/Sy1UM-0nCBU",
         dz: [
           {
             buttonText: "Домашнее задание",
@@ -20,7 +20,7 @@ export const modulesList = [
       // },
     ],
     id: "1",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Самооценка",
