@@ -28,7 +28,7 @@ export const modulesList = [
       "Наработка уверенности в себе, внутреней опоры, смелости проявляться",
     links: [
       {
-        url: "https://youtu.be/Az8CfSjpk3g",
+        url: "https://youtu.be/dnVY1aJDO1k",
         dz: [
           {
             buttonText: "Домашнее задание 1",
@@ -44,7 +44,7 @@ export const modulesList = [
       },
     ],
     id: "2",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Убираем страхи",
@@ -157,7 +157,7 @@ export const additionsBlock = [
       },
     ],
     id: "A",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Аудитория",
