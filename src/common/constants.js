@@ -31,13 +31,13 @@ export const modulesList = [
         url: "https://youtu.be/dnVY1aJDO1k",
         dz: [
           {
-            buttonText: "Домашнее задание 1",
+            buttonText: "Домашнее задание",
             link: "https://docs.google.com/document/d/1rLRNd918Xt0bt3Jdu-nAqOdGr5vL4hNXp7wGUpr9h5I/edit?usp=drive_link",
           },
-          {
-            buttonText: "Домашнее задание 2",
-            link: "https://drive.google.com/file/d/1Kgs8iLAMOB9Z7aQqGvqyO1yxGPnlSZl6/view?usp=drive_link",
-          },
+          // {
+          //   buttonText: "Домашнее задание 2",
+          //   link: "https://drive.google.com/file/d/1Kgs8iLAMOB9Z7aQqGvqyO1yxGPnlSZl6/view?usp=drive_link",
+          // },
         ],
 
         title: "Самооценка",
@@ -146,13 +146,13 @@ export const additionsBlock = [
     description: "Определяем свое направление в работе",
     links: [
       {
-        url: "https://youtu.be/By3F00YBL7o",
-        dz: [
-          {
-            buttonText: "Домашнее задание",
-            link: "https://drive.google.com/drive/folders/1-NWYP2-N-C2omVOhqfp3DOhn76I69qUm?usp=drive_link",
-          },
-        ],
+        url: "https://youtu.be/xhTmZNaiGNQ",
+        // dz: [
+        //   {
+        //     buttonText: "Домашнее задание",
+        //     link: "https://drive.google.com/drive/folders/1-NWYP2-N-C2omVOhqfp3DOhn76I69qUm?usp=drive_link",
+        //   },
+        // ],
         title: "Экспертная самоидентификация",
       },
     ],
