@@ -52,7 +52,7 @@ export const modulesList = [
       "Вы научитесь работать со своими страхами и превращать их в ресурс",
     links: [
       {
-        url: "https://youtu.be/F9YY3Ir2mF8",
+        url: "https://youtu.be/nRXrZkHl-wg",
         title: "Страхи",
         dz: [
           {
@@ -63,7 +63,7 @@ export const modulesList = [
       },
     ],
     id: "3",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Финансы",
