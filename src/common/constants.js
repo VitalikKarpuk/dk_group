@@ -164,7 +164,7 @@ export const additionsBlock = [
     description: "Определяем и исследуем свою целевую аудиторию",
     links: [
       {
-        url: "https://youtu.be/By3F00YBL7o",
+        url: "https://youtu.be/huIbTp6n5DM",
         dz: [
           {
             buttonText: "Домашнее задание",
@@ -175,7 +175,7 @@ export const additionsBlock = [
       },
     ],
     id: "B",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продуктовая линейка",
