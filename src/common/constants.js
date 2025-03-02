@@ -72,7 +72,7 @@ export const modulesList = [
     link: "/",
     links: [
       {
-        url: "https://youtu.be/CZnc_TbcUiE",
+        url: "https://youtu.be/fwZrOlp3WD4",
         title: "Финансы",
         dz: [
           {
@@ -87,7 +87,7 @@ export const modulesList = [
       },
     ],
     id: "4",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Уникальность",
