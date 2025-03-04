@@ -182,12 +182,12 @@ export const additionsBlock = [
     description: "Создаем свою уникальную продуктовую линейку",
     links: [
       {
-        url: "https://youtu.be/pIJBU6q6gsA",
+        url: "https://youtu.be/jXv68jBk5Fw",
         title: "Продукт",
       },
     ],
     id: "C",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Воронка",
