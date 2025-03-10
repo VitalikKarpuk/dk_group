@@ -95,7 +95,7 @@ export const modulesList = [
       "Определение вашей аутентичности как личности и как эксперта, выявление сильных сторон",
     links: [
       {
-        url: "https://youtu.be/QaCUnUqSnDA",
+        url: "https://youtu.be/Ghz06ty1D8U",
         title: "Уникальность",
         dz: [
           {
@@ -111,7 +111,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продажи и продвижение",
