@@ -206,6 +206,6 @@ export const additionsBlock = [
       },
     ],
     id: "D",
-    disabled: true,
+    disabled: false,
   },
 ];
