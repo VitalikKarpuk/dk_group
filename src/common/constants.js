@@ -194,7 +194,7 @@ export const additionsBlock = [
     description: "Создаем путь клиента для покупки и увеличиваем его ЛТВ",
     links: [
       {
-        url: "https://youtu.be/iXo3lPHFBc4",
+        url: "https://youtu.be/KHCnxp5XzWs",
         buttonText: "Домашнее задание",
         dz: [
           {
