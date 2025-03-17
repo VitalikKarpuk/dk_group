@@ -119,7 +119,7 @@ export const modulesList = [
       "Инструменты для продаж, упоковка продукта, анализ покупателя, система продвижения",
     links: [
       {
-        url: "https://youtu.be/IuuK3D_cTRA",
+        url: "https://youtu.be/64HKRH2R6Eg",
         title: "Продажи и продвижение",
         dz: [
           {
@@ -136,7 +136,7 @@ export const modulesList = [
 
     link: "/",
     id: "6",
-    disabled: true,
+    disabled: false,
   },
 ];
 
