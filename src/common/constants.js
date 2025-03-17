@@ -125,11 +125,7 @@ export const modulesList = [
           {
             buttonText: "Дополнительные материалы",
             link: "https://drive.google.com/drive/folders/1GaCeszZxdcf-uxmsF0g2zBQyGJPQdGRR?usp=drive_link",
-          },
-          {
-            link: "https://docs.google.com/document/d/133pOU9iHvVi0OKGYlBhwO1VskzZgbdCaxYmr24BYjnw/edit?usp=sharing",
-            buttonText: "Обратная связь",
-          },
+          }
         ],
       },
     ],
