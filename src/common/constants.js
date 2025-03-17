@@ -120,7 +120,7 @@ export const modulesList = [
     links: [
       {
         url: "https://youtu.be/64HKRH2R6Eg",
-        title: "Продажи и продвижение",
+        title: "Успешные продажи",
         dz: [
           {
             buttonText: "Дополнительные материалы",
