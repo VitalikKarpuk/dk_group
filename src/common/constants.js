@@ -123,7 +123,7 @@ export const modulesList = [
         title: "Успешные продажи",
       },
       {
-        url: "https://youtu.be/64HKRH2R6Eg",
+        url: "https://youtu.be/wSl7mlFS1Do",
         dz: [
           {
             buttonText: "Дополнительные материалы",
