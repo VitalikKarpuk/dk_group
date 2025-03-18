@@ -121,6 +121,9 @@ export const modulesList = [
       {
         url: "https://youtu.be/64HKRH2R6Eg",
         title: "Успешные продажи",
+      },
+      {
+        url: "https://youtu.be/64HKRH2R6Eg",
         dz: [
           {
             buttonText: "Дополнительные материалы",
