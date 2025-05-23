@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import logo from "./logo.png";
+import logo from "./img/logo.png";
 
 import style from "./index.module.css";
 import { Link } from "react-router-dom";
