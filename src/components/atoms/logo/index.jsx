@@ -1,7 +1,7 @@
-import classNames from "classnames";
+// import classNames from "classnames";
 // import logo from "./img/logo.png";
 
-import style from "./index.module.css";
+// import style from "./index.module.css";
 import { Link } from "react-router-dom";
 
 const Logo = ({ className }) => {
