@@ -19,8 +19,9 @@ export const modulesList = [
       //   disabled: true,
       // },
     ],
+    
     id: "1",
-    disabled: false,
+    disabled: false
   },
   {
     title: "Самооценка",
