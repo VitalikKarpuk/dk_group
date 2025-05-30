@@ -45,7 +45,7 @@ export const modulesList = [
       },
     ],
     id: "2",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Убираем страхи",
@@ -157,7 +157,7 @@ export const additionsBlock = [
       },
     ],
     id: "A",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Аудитория",
