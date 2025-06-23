@@ -112,7 +112,7 @@ export const modulesList = [
     ],
     link: "/",
     id: "5",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Успешные продажи",
@@ -206,6 +206,6 @@ export const additionsBlock = [
       },
     ],
     id: "D",
-    disabled: true,
+    disabled: false,
   },
 ];
