@@ -19,7 +19,7 @@ export const modulesList = [
       //   disabled: true,
       // },
     ],
-    
+
     id: "1",
     disabled: false,
   },
@@ -45,7 +45,7 @@ export const modulesList = [
       },
     ],
     id: "2",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Убираем страхи",
@@ -129,7 +129,7 @@ export const modulesList = [
           {
             buttonText: "Дополнительные материалы",
             link: "https://drive.google.com/drive/folders/1GaCeszZxdcf-uxmsF0g2zBQyGJPQdGRR?usp=drive_link",
-          }
+          },
         ],
       },
     ],
@@ -157,7 +157,7 @@ export const additionsBlock = [
       },
     ],
     id: "A",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Аудитория",
