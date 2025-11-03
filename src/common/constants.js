@@ -64,7 +64,7 @@ export const modulesList = [
       },
     ],
     id: "3",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Финансы",
