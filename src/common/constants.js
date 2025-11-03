@@ -175,7 +175,7 @@ export const additionsBlock = [
       },
     ],
     id: "B",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Продуктовая линейка",
@@ -187,7 +187,7 @@ export const additionsBlock = [
       },
     ],
     id: "C",
-    disabled: false,
+    disabled: true,
   },
   {
     title: "Воронка",
