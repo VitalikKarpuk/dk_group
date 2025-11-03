@@ -187,7 +187,7 @@ export const additionsBlock = [
       },
     ],
     id: "C",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Воронка",
