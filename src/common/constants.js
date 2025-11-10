@@ -88,7 +88,7 @@ export const modulesList = [
       },
     ],
     id: "4",
-    disabled: true,
+    disabled: false,
   },
   {
     title: "Уникальность",
@@ -206,6 +206,6 @@ export const additionsBlock = [
       },
     ],
     id: "D",
-    disabled: true,
+    disabled: false,
   },
 ];
