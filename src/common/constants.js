@@ -147,12 +147,12 @@ export const additionsBlock = [
     links: [
       {
         url: "https://youtu.be/xhTmZNaiGNQ",
-        // dz: [
-        //   {
-        //     buttonText: "Домашнее задание",
-        //     link: "https://drive.google.com/drive/folders/1-NWYP2-N-C2omVOhqfp3DOhn76I69qUm?usp=drive_link",
-        //   },
-        // ],
+        dz: [
+          {
+            buttonText: "Вопросы для самопрезентации",
+            link: "https://docs.google.com/document/d/1G3fu-DxmONGw1yXdVSWauqfcI28X4t9q2eHgQN6rMBw/edit?usp=sharing",
+          },
+        ],
         title: "Экспертная самоидентификация",
       },
     ],
