@@ -1,5 +1,54 @@
 :root {
+    /* Палитра (существующие цвета) */
+    --col--primary: #698efa;
+    --col--primary-rgb: 105, 142, 250;
+    --col--dark: #1e2a4a;
+    --col--primary1: #698efa;
+    --col--link: #5a7de8;
+    --col--muted: #676767;
+    --col--white: #ffffff;
+    --col--footer: #3d4f7a;
     --border-color: #edece8;
+
+    /* Тени */
+    --shadow-sm: 0 2px 8px rgba(30, 42, 74, 0.06);
+    --shadow-md: 0 8px 24px rgba(30, 42, 74, 0.1);
+    --shadow-lg: 0 16px 48px rgba(30, 42, 74, 0.12);
+    --shadow-card: 0 4px 20px rgba(105, 142, 250, 0.15);
+
+    /* Радиусы */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 24px;
+
+    /* Переходы */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+
+    /* Кнопки */
+    --btn-height: 48px;
+    --btn-padding-x: 24px;
+    --btn-font-size: 15px;
+    --btn-letter-spacing: 0.02em;
+    --btn-disabled-bg: #8a8a8a;
+    --btn-disabled-color: #e8e8e8;
+
+    /* Секции */
+    --section-spacing: 64px;
+    --section-spacing-mobile: 44px;
+    --section-first-top: 80px;
+    --section-first-top-mobile: 56px;
+    --section-header-gap: 24px;
+    --section-accent-width: 64px;
+    --section-accent-height: 4px;
+    --section-border-opacity: 0.28;
+    --section-card-tint: 0.04;
+
+    /* Лейаут */
     --desktop-width: 1920px;
     --app-height: 100%;
+    --container-max: 1200px;
+    --container-padding: 24px;
+    --container-padding-mobile: 16px;
 }

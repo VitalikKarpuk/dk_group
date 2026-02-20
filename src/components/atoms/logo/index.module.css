@@ -1,10 +1,15 @@
 .logo {
-  width:  150px;
+  width: 100px;
   border-radius: 50%;
+  transition: opacity var(--transition-fast);
+}
+
+.logo:hover {
+  opacity: 0.9;
 }
 
 @media (max-width: 768px) {
   .logo {
-    width: 100px;
+    width: 72px;
   }
 }

@@ -1,22 +1,261 @@
-.additionsBlocks {
-    background-color: #ffffff;
-    padding-top: 20px;
+/* ========== Полосы секций: граница только между полосами ========== */
+.sectionStrip {
+  width: 100%;
+  padding: var(--section-spacing) 0;
 }
 
-.additionsBlocks button {
-    background-color: rgb(105, 142, 250);
-    color: #ffffff;
+/* Первая секция после баннера: больше воздуха и мягкий переход */
+.sectionStrip[data-section="intro"] {
+  background-color: var(--col--white);
+  padding-top: var(--section-first-top);
+  padding-bottom: var(--section-spacing);
+  border-top: 1px solid var(--border-color);
 }
 
+/* Секция «Модули курса» — выраженный синий фон, заголовок светлый */
+.sectionStrip[data-section="modules"] {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--col--primary-rgb), 0.85) 0%,
+    rgba(45, 58, 92, 0.92) 50%,
+    var(--col--dark) 100%
+  );
+  background-color: var(--col--primary);
+}
+
+.sectionStrip[data-section="modules"] .sectionHeader {
+  color: var(--col--white);
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+
+.sectionStrip[data-section="modules"] .sectionHeader > div {
+  color: var(--col--white);
+}
+
+.sectionStrip[data-section="modules"] .sectionHeader > div::after {
+  background: var(--col--white);
+}
+
+.sectionDivider {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(var(--col--primary-rgb), 0.5) 20%,
+    rgba(var(--col--primary-rgb), 0.75) 50%,
+    rgba(var(--col--primary-rgb), 0.5) 80%,
+    transparent 100%
+  );
+  flex-shrink: 0;
+}
+
+/* ========== Ритм внутри секции ========== */
+.section {
+  scroll-margin-top: 5rem;
+}
+
+.sectionStrip .section {
+  margin-bottom: 0;
+}
+
+/* ========== Заголовки секций ========== */
+.sectionHeader {
+  margin-bottom: var(--section-header-gap);
+  padding-bottom: 16px;
+  border-bottom: 3px solid rgba(var(--col--primary-rgb), var(--section-border-opacity));
+}
+
+.sectionHeader > div {
+  display: inline-block;
+  position: relative;
+}
+
+.sectionHeader > div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -19px;
+  width: var(--section-accent-width);
+  height: var(--section-accent-height);
+  background: var(--col--primary);
+  border-radius: calc(var(--section-accent-height) / 2);
+  transition: width var(--transition-normal);
+}
+
+.sectionHeader:focus-within > div::after,
+.section:hover .sectionHeader > div::after {
+  width: 88px;
+}
+
+/* Вводный модуль — выделение первой секции, отступ от заголовка */
+.sectionIntro .sectionHeader {
+  border-bottom-color: rgba(var(--col--primary-rgb), 0.4);
+  margin-bottom: 32px;
+}
+
+/* ========== Карточка вводного модуля ========== */
 .initModule {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 40px;
+  max-width: 580px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background: var(--col--white);
+  border-radius: var(--radius-xl);
+  box-shadow:
+    var(--shadow-lg),
+    0 0 0 1px rgba(var(--col--primary-rgb), 0.06),
+    0 4px 0 0 var(--col--primary);
+  border: none;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  overflow: hidden;
+  position: relative;
 }
 
-.initModule button {
-    width: 100%;
+.initModule:hover {
+  box-shadow:
+    var(--shadow-card),
+    0 0 0 1px rgba(var(--col--primary-rgb), 0.1),
+    0 6px 0 0 var(--col--primary);
+}
+
+.initModule:focus-within {
+  box-shadow:
+    var(--shadow-card),
+    0 0 0 2px rgba(var(--col--primary-rgb), 0.2),
+    0 4px 0 0 var(--col--primary);
+}
+
+/* Блок с видео */
+.initModuleVideo {
+  padding: 24px 24px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.initModuleVideo > * {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+/* Блок с кнопками */
+.initModuleActions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 24px 28px;
+  border-top: 1px solid var(--border-color);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--col--primary-rgb), 0.03) 0%,
+    rgba(var(--col--primary-rgb), 0.06) 100%
+  );
+}
+
+.initModuleButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.buttonLink {
+  flex: 1;
+  min-width: 140px;
+  display: block;
+  text-decoration: none;
+}
+
+.buttonLink button {
+  width: 100%;
+}
+
+/* ========== Секция «Модули курса» ========== */
+.sectionModules .sectionHeader {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+/* ========== Переход к блоку «Дополнительные блоки» ========== */
+.additionsBlocks {
+  background-color: var(--col--white);
+  margin-top: 0;
+  padding: 56px 0 64px;
+  box-shadow: 0 -2px 16px rgba(30, 42, 74, 0.06);
+  border-radius: 0;
+}
+
+.sectionHeaderAdditions {
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid rgba(var(--col--primary-rgb), 0.18);
+}
+
+.sectionHeaderAdditions > div {
+  display: inline-block;
+  position: relative;
+}
+
+.sectionHeaderAdditions > div::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -19px;
+  width: var(--section-accent-width);
+  height: var(--section-accent-height);
+  background: var(--col--primary);
+  border-radius: calc(var(--section-accent-height) / 2);
+}
+
+/* Кнопки в блоке задаются через variant="primary" в компоненте Button */
+
+@media (max-width: 768px) {
+  .sectionStrip {
+    padding: var(--section-spacing-mobile) 0;
+  }
+  .sectionStrip[data-section="intro"] {
+    padding-top: var(--section-first-top-mobile);
+    padding-bottom: var(--section-spacing-mobile);
+  }
+  .initModuleVideo {
+    padding: 20px 20px 16px;
+  }
+  .initModuleActions {
+    padding: 20px 20px 24px;
+    gap: 12px;
+  }
+  .initModuleButtons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .buttonLink {
+    min-width: 100%;
+  }
+  .sectionHeader,
+  .sectionHeaderAdditions {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+  }
+  .additionsBlocks {
+    padding: 40px 0 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionStrip[data-section="intro"] {
+    padding-top: 40px;
+  }
+  .initModuleVideo {
+    padding: 16px 16px 12px;
+  }
+  .initModuleActions {
+    padding: 16px 16px 20px;
+  }
+  .additionsBlocks {
+    padding: 32px 0 40px;
+  }
 }

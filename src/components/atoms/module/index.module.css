@@ -1,68 +1,203 @@
 .wrapper {
-  padding: 25px;
-  border-radius: 20px;
-  background-color: transparent;
-  width: 350px;
-  height: 240px;
+  padding: 24px 24px 28px;
+  border-radius: var(--radius-xl);
+  background-color: var(--col--white);
+  min-height: 260px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: stretch;
+  text-align: left;
   position: relative;
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 1px rgba(var(--col--primary-rgb), 0.06);
+  border: none;
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  overflow: hidden;
 }
 
-.wrapper a {
-  z-index: 1;
+.wrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--col--primary);
+  opacity: 0.35;
+  transition: opacity var(--transition-normal);
 }
 
-.infoList {
+.wrapper:hover:not(.wrapperDisabled) {
+  box-shadow:
+    var(--shadow-card),
+    0 0 0 1px rgba(var(--col--primary-rgb), 0.12);
+  transform: translateY(-3px);
+}
+
+.wrapper:hover:not(.wrapperDisabled)::after {
+  opacity: 0.7;
+}
+
+.wrapper:focus-within:not(.wrapperDisabled) {
+  box-shadow:
+    var(--shadow-card),
+    0 0 0 2px rgba(var(--col--primary-rgb), 0.25);
+}
+
+/* Disabled: без подъёма, приглушённо */
+.wrapperDisabled {
+  opacity: 0.88;
+  cursor: default;
+}
+
+.wrapperDisabled::after {
+  opacity: 0.2;
+}
+
+/* Бейдж «Модуль N» */
+.badgeRow {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+.badge {
+  font-family: var(--ff--inter-bold, inherit);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--col--muted);
+  padding: 5px 11px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.06);
+  -webkit-font-smoothing: antialiased;
+}
+
+.blueBadge {
+  color: var(--col--primary);
+  background: rgba(var(--col--primary-rgb), 0.12);
+}
+
+.soonBadge {
+  font-family: var(--ff--inter-semi-bold, inherit);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--col--muted);
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.06);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Заголовок */
+.titleLink {
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
 }
 
 .title {
-  font-size: 24px;
-  z-index: 1;
+  font-family: var(--ff--inter-semi-bold, inherit);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--col--dark);
+  margin: 0;
+  transition: color var(--transition-fast);
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.titleLink:hover .title,
+.titleLink:focus-visible .title {
+  color: var(--col--primary);
 }
 
 .description {
-  font-size: 16px;
-  margin-top: 20px;
-  z-index: 1;
-}
-
-.id {
-  position: absolute;
-  font-size: 200px;
-  color: #ececec40;
-  font-weight: 900;
-  z-index: 0;
-  top: 80px;
-}
-
-.blueId {
-  color: rgb(105 142 250 / 39%)
-
-}
-
-.link {
-  margin-top: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 100%;
+  font-family: var(--ff--inter-regular, inherit);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 14px 0 0;
+  color: rgba(30, 42, 74, 0.72);
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   flex-grow: 1;
-  flex-shrink: 1;
-  width: 100%;
-  cursor: pointer;
+  min-height: 3.3em;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.link a {
+/* CTA */
+.cta {
+  margin-top: auto;
+  padding-top: 20px;
+  flex-shrink: 0;
+}
+
+.ctaLink {
+  display: block;
   width: 100%;
+  text-decoration: none;
 }
 
 .button {
   width: 100%;
+  position: relative;
+  padding-right: 36px;
+}
+
+.ctaLink .button::after {
+  content: "→";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Карточки в блоке «Дополнительные блоки» */
+.wrapperAdditions {
+  box-shadow:
+    var(--shadow-sm),
+    0 0 0 1px rgba(var(--col--primary-rgb), 0.15);
+  background-color: rgba(var(--col--primary-rgb), var(--section-card-tint));
+}
+
+.wrapperAdditions::after {
+  background: var(--col--primary);
+  opacity: 0.5;
+}
+
+.wrapperAdditions:hover:not(.wrapperDisabled)::after {
+  opacity: 0.9;
+}
+
+.wrapperAdditions .blueBadge {
+  color: var(--col--primary);
+  background: rgba(var(--col--primary-rgb), 0.18);
+}
+
+.wrapperAdditions .soonBadge {
+  background: rgba(var(--col--primary-rgb), 0.12);
+  color: var(--col--dark);
+}
+
+.wrapperAdditions .description {
+  color: rgba(30, 42, 74, 0.7);
 }

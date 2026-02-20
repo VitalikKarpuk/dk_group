@@ -5,20 +5,45 @@ import Button from "../button";
 
 const Module = ({ title, id, description, isBlue, disabled }) => {
   return (
-    <div className={style.wrapper}>
-      <div className={classNames(style.id, {
-        [style.blueId]: isBlue
-      })}>{id}</div>
-      <Link to={id}>
-        <p className={classNames(style.title, "t-inter-medium")}>{title}</p>
-      </Link>
-      <p className={style.description}>{description}</p>
-      <div className={style.link}>
-        <Link to={id}>
-          <Button text={"Переход к уроку"} className={style.button} disabled={disabled}/>
-        </Link>
+    <article
+      className={classNames(style.wrapper, {
+        [style.wrapperAdditions]: isBlue,
+        [style.wrapperDisabled]: disabled,
+      })}
+    >
+      <div className={style.badgeRow}>
+        <span className={classNames(style.badge, { [style.blueBadge]: isBlue })}>
+          Модуль {id}
+        </span>
+        {disabled && <span className={style.soonBadge}>Скоро</span>}
       </div>
-    </div>
+      {disabled ? (
+        <h3 className={classNames(style.title, "t-inter-medium")}>{title}</h3>
+      ) : (
+        <Link to={id} className={style.titleLink}>
+          <h3 className={classNames(style.title, "t-inter-medium")}>{title}</h3>
+        </Link>
+      )}
+      <p className={style.description}>{description}</p>
+      <div className={style.cta}>
+        {disabled ? (
+          <Button
+            text="Переход к уроку"
+            variant={isBlue ? "primary" : undefined}
+            className={style.button}
+            disabled
+          />
+        ) : (
+          <Link to={id} className={style.ctaLink}>
+            <Button
+              text="Переход к уроку"
+              variant={isBlue ? "primary" : undefined}
+              className={style.button}
+            />
+          </Link>
+        )}
+      </div>
+    </article>
   );
 };
 

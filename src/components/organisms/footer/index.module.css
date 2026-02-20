@@ -1,25 +1,112 @@
 .footer {
-  padding: 20px 0;
-  background-color: #b7b5b5;
+  flex-shrink: 0;
+  padding: 16px 0;
+  background: linear-gradient(
+    180deg,
+    #2a3552 0%,
+    var(--col--dark) 40%,
+    #1a2340 100%
+  );
+  color: var(--col--white);
+  position: relative;
 }
 
-.footer > div {
-  display: flex;
-  justify-content: center;
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(var(--col--primary-rgb), 0.5) 15%,
+    var(--col--primary) 50%,
+    rgba(var(--col--primary-rgb), 0.5) 85%,
+    transparent 100%
+  );
 }
-.mediaBlock {
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 24px;
+  text-align: center;
+}
+
+.label {
+  font-family: var(--ff--inter-semi-bold, inherit);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+}
+
+.nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 8px;
 }
 
-.mediaBlock svg {
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
-  cursor: pointer;
-  transition: all .3s;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.06);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.mediaBlock svg:hover {
-    opacity: .5;
+.iconLink:hover {
+  color: var(--col--white);
+  background: rgba(var(--col--primary-rgb), 0.35);
+  transform: translateY(-1px);
+}
+
+.iconLink:focus-visible {
+  outline: 2px solid var(--col--primary);
+  outline-offset: 2px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.copyright {
+  font-family: var(--ff--inter-regular, inherit);
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 14px 0;
   }
+  .inner {
+    gap: 10px 20px;
+  }
+  .iconLink {
+    width: 44px;
+    height: 44px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

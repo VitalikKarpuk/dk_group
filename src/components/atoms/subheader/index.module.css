@@ -1,12 +1,20 @@
 .subheader {
   font-size: 48px;
-  line-height: 52px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--col--dark);
 }
 
 @media (max-width: 768px) {
   .subheader {
     font-size: 38px;
-    line-height: 42px;
+    line-height: 1.15;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .subheader {
+    font-size: 28px;
+    line-height: 1.2;
+  }
 }

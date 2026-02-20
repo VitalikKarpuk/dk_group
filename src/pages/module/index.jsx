@@ -1,48 +1,73 @@
-import { useParams } from "react-router";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { additionsBlock, modulesList } from "../../common/constants";
 
 import style from "./index.module.css";
 import Button from "../../components/atoms/button";
-import { Link } from "react-router-dom";
-import classNames from "classnames";
 import Video from "../../components/moleculs/video/video";
 
 const Module = () => {
-  let params = useParams();
-
+  const params = useParams();
   const module = modulesList.find(
     ({ id, disabled }) => id === params.id && !disabled
   );
-
   const additionBlock = additionsBlock.find(
     ({ id, disabled }) => id === params.id && !disabled
   );
-
   const block = module || additionBlock;
 
   if (!block) {
-    window.location.href = "/404";
+    return <Navigate to="/404" replace />;
   }
 
   return (
-    <div className={classNames(style.wrapper, "container")}>
-      {block.links.map(({ url, title, dz }) => {
-        return (
-          <>
-            <h1>{title}</h1>
-            <div className={style.videoWrapper}>
-              <Video link={url} />
-              {dz?.map(({ buttonText, link }) => {
-                return (
-                  <Link to={link} className={style.button} target="_blank">
-                    <Button text={buttonText || "Домашнее задание"} />
-                  </Link>
-                );
-              })}
-            </div>
-          </>
-        );
-      })}
+    <div className={style.wrapper}>
+      <div className="container">
+        <Link to="/" className={style.backLink}>
+          ← К модулям
+        </Link>
+
+        <header className={style.header}>
+          <h1 className={style.title}>{block.title}</h1>
+          {block.description && (
+            <p className={style.description}>{block.description}</p>
+          )}
+        </header>
+
+        <div className={style.lessons}>
+          {block.links.map((lesson, index) => (
+            <section
+              key={lesson.url || index}
+              className={style.lesson}
+              aria-labelledby={`lesson-${index}`}
+            >
+              <h2 id={`lesson-${index}`} className={style.lessonTitle}>
+                {lesson.title || block.title}
+              </h2>
+              <div className={style.videoWrap}>
+                <Video link={lesson.url} />
+              </div>
+              {lesson.dz?.length > 0 && (
+                <div className={style.actions}>
+                  {lesson.dz.map((item) => (
+                    <a
+                      key={item.link}
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={style.actionLink}
+                    >
+                      <Button
+                        text={item.buttonText || "Домашнее задание"}
+                        variant="primary"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
+            </section>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

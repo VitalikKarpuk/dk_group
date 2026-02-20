@@ -1,15 +1,19 @@
 .videoLoader {
   width: 100%;
   height: 250px;
-  background-color: #000000;
+  background-color: var(--col--dark);
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: var(--radius-md);
 }
 
 .wrapper {
-    position: relative;
-    max-width: 500px;
-    width: 100%;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
 }

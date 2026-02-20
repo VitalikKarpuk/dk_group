@@ -1,18 +1,84 @@
+/* Базовые стили кнопки */
 .button {
-  padding: 10px 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--btn-height);
+  padding: 0 var(--btn-padding-x);
   border: none;
-  font-size: 16px;
-  background-color: #fff;
+  font-family: inherit;
+  font-size: var(--btn-font-size);
+  font-weight: 600;
+  letter-spacing: var(--btn-letter-spacing);
+  text-transform: uppercase;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-fast), transform var(--transition-fast),
+    background-color var(--transition-fast), border-color var(--transition-fast),
+    color var(--transition-fast);
+  -webkit-tap-highlight-color: transparent;
 }
 
+/* Вторичная кнопка (светлая) */
+.button {
+  background-color: var(--col--white);
+  color: var(--col--dark);
+  border: 2px solid var(--border-color);
+}
+
+.button:hover:not(:disabled) {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: rgba(var(--col--primary-rgb), 0.35);
+  background-color: rgba(var(--col--primary-rgb), 0.04);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--col--primary);
+  outline-offset: 2px;
+}
+
+/* Первичная кнопка (акцентная) */
+.primary,
 .blue {
-  background-color: rgb(105, 142, 250);
+  background-color: var(--col--primary);
+  color: var(--col--white);
+  border: 2px solid transparent;
 }
 
+.primary:hover:not(:disabled),
+.blue:hover:not(:disabled) {
+  background-color: #5a7de8;
+  box-shadow: 0 6px 20px rgba(var(--col--primary-rgb), 0.4);
+  transform: translateY(-2px);
+  border-color: transparent;
+}
+
+.primary:active:not(:disabled),
+.blue:active:not(:disabled) {
+  background-color: #4d6ed6;
+  transform: translateY(0);
+}
+
+.primary:focus-visible,
+.blue:focus-visible {
+  outline: 2px solid var(--col--primary);
+  outline-offset: 2px;
+}
+
+/* Disabled */
 .button:disabled {
-  background-color: rgb(142 142 142);
+  background-color: var(--btn-disabled-bg);
+  color: var(--btn-disabled-color);
+  border-color: transparent;
   box-shadow: none;
-  cursor: default;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.9;
 }
