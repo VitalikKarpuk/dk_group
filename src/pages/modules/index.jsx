@@ -19,7 +19,7 @@ const Home = () => {
             </div>
             <div className={style.initModule}>
               <div className={style.initModuleVideo}>
-                <Video link="https://youtu.be/lwKM2j_vAwQ" />
+                <Video link="https://youtu.be/w6TqvgY5478" />
               </div>
               <div className={style.initModuleActions}>
                 <div className={style.initModuleButtons}>
