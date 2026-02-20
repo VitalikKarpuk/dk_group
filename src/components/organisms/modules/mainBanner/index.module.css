@@ -141,7 +141,7 @@
   .textBlock {
     order: 2;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     margin-top: -80px;
     padding: 60px 0 0;
     max-width: none;
@@ -192,6 +192,7 @@
   .photoWrap {
     order: 1;
     position: relative;
+    z-index: 1;
     width: 100%;
     min-height: 260px;
     overflow: hidden;
@@ -203,6 +204,7 @@
   }
   .photo {
     position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 340px;
     height: auto;
