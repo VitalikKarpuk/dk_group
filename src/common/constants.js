@@ -136,7 +136,7 @@ export const modulesList = [
 
     link: "/",
     id: "6",
-    disabled: true,
+    disabled: false,
   },
 ];
 
