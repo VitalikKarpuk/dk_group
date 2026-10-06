@@ -8,7 +8,7 @@ const Header = () => {
         <div className={style.headerInner}>
           <Logo />
           <span className={style.badge}>
-            Доступ до 1 июня (включительно)
+            Доступ до 1 марта (включительно)
           </span>
         </div>
       </div>
